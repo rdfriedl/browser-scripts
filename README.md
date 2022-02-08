@@ -10,6 +10,10 @@ To import a script do `import("https://browser-scripts.rdfriedl.com/<script>");`
 
 Dont forget the `https://` and the `.js` at the end
 
+## Script not working?
+
+If the scripts are not loading due to CORS policy on the website (like facebook.com) then your going to have to copy/paste the scripts into the browser extension instead of importing it.
+
 ## List of all scripts
 
 [https://browser-scripts.rdfriedl.com/](https://browser-scripts.rdfriedl.com/)
