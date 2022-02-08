@@ -1,24 +1,25 @@
 {
-  "name": "personal-browser-scripts",
-  "version": "1.0.0",
-  "description": "",
-  "scripts": {
-    "deploy": "ipd ./scripts -O -C",
-    "format": "prettier --write scripts"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
-  },
-  "author": "Robert Friedl",
-  "license": "MIT",
-  "devDependencies": {
-    "husky": "^6",
-    "ipfs-deploy": "^11.1.0",
-    "lint-staged": "^11.1.2"
-  },
-  "lint-staged": {
-    "*.--write": "prettier --write"
-  }
+	"name": "personal-browser-scripts",
+	"version": "1.0.0",
+	"description": "",
+	"scripts": {
+		"deploy": "ipd ./scripts -O -C",
+		"format": "prettier --write ."
+	},
+	"husky": {
+		"hooks": {
+			"pre-commit": "lint-staged"
+		}
+	},
+	"author": "Robert Friedl",
+	"license": "MIT",
+	"devDependencies": {
+		"husky": "^6",
+		"ipfs-deploy": "^11.1.0",
+		"lint-staged": "^11.1.2",
+		"marked": "^4.0.12"
+	},
+	"lint-staged": {
+		"*.--write": "prettier --write"
+	}
 }
