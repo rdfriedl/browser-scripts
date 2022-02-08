@@ -1,0 +1,8 @@
+{
+	"build": {
+		"image": "node:alpine",
+		"command": "npm run build",
+		"publicDir": "scripts",
+		"baseDir": "./"
+	}
+}
