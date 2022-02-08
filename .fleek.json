@@ -1,7 +1,7 @@
 {
 	"build": {
 		"image": "node:alpine",
-		"command": "npm --version",
+		"command": "cp README.md scripts/README.md",
 		"publicDir": "scripts",
 		"baseDir": "./"
 	}
