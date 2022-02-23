@@ -20,24 +20,30 @@ If the scripts are not loading due to CORS policy on the website (like facebook.
 
 ## Examples
 
+### Use Everything
+
+```js
+import("https://browser-scripts.rdfriedl.com/index.js");
+```
+
 ### Facebook
 
 ```js
-import("https://browser-scripts.rdfriedl.com/facebook/grayscale.js");
-import("https://browser-scripts.rdfriedl.com/facebook/remove-ads.js");
+import("https://browser-scripts.rdfriedl.com/facebook.com/grayscale.js");
+import("https://browser-scripts.rdfriedl.com/facebook.com/remove-ads.js");
 ```
 
 ### Reddit
 
 ```js
-import("https://browser-scripts.rdfriedl.com/reddit/remove-livestream.js");
-import("https://browser-scripts.rdfriedl.com/reddit/remove-promoted.js");
+import("https://browser-scripts.rdfriedl.com/reddit.com/remove-livestream.js");
+import("https://browser-scripts.rdfriedl.com/reddit.com/remove-promoted.js");
 ```
 
 ### Youtube
 
 ```js
-import("https://browser-scripts.rdfriedl.com/youtube/speed-keys.js");
+import("https://browser-scripts.rdfriedl.com/youtube.com/speed-keys.js");
 ```
 
 ## Source

@@ -3,11 +3,6 @@
  */
 setInterval(() => {
 	Array.from(document.querySelectorAll(".Post"))
-		.filter(
-			(el) =>
-				!!el.querySelector(
-					"[data-click-id=background]>*:first-child.RichTextJSON-root"
-				)
-		)
+		.filter((el) => !!el.querySelector("[data-click-id=background]>*:first-child.RichTextJSON-root"))
 		.forEach((el) => el.remove());
 }, 500);

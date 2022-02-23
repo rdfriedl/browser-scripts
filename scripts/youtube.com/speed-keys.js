@@ -8,11 +8,8 @@
 import { wait } from "../utils/async.js";
 
 function findMenuItem(label) {
-	return Array.from(
-		document.querySelectorAll(".ytp-settings-menu .ytp-menuitem")
-	).find(
-		(el) =>
-			String(el.querySelector(".ytp-menuitem-label").textContent) === label
+	return Array.from(document.querySelectorAll(".ytp-settings-menu .ytp-menuitem")).find(
+		(el) => String(el.querySelector(".ytp-menuitem-label").textContent) === label
 	);
 }
 
@@ -22,9 +19,7 @@ const isMenuOpen = () => {
 
 async function setPlaybackSpeed(speed = "Normal") {
 	const delay = 100;
-	let menuButton = document.querySelector(
-		"#movie_player .ytp-chrome-controls .ytp-settings-button"
-	);
+	let menuButton = document.querySelector("#movie_player .ytp-chrome-controls .ytp-settings-button");
 	if (isMenuOpen()) {
 		menuButton.click();
 		await wait(delay);
