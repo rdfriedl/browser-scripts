@@ -3,6 +3,8 @@
  * Numpad / set speed to 1x
  * Numpad * set speed to 2x
  * Numpad - set speed to 1.5x
+ * G set speed to 1x
+ * H set speed to 2x
  */
 
 import { wait } from "../utils/async.js";
@@ -18,7 +20,7 @@ const isMenuOpen = () => {
 };
 
 async function setPlaybackSpeed(speed = "Normal") {
-	const delay = 100;
+	const delay = 200;
 	let menuButton = document.querySelector("#movie_player .ytp-chrome-controls .ytp-settings-button");
 	if (isMenuOpen()) {
 		menuButton.click();
@@ -37,6 +39,8 @@ const keymap = {
 	NumpadMultiply: "2",
 	NumpadDivide: "Normal",
 	NumpadSubtract: "1.5",
+	KeyG: 'Normal',
+	KeyH: '2'
 };
 
 document.addEventListener("keydown", (event) => {
