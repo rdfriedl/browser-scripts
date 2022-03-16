@@ -39,8 +39,8 @@ const keymap = {
 	NumpadMultiply: "2",
 	NumpadDivide: "Normal",
 	NumpadSubtract: "1.5",
-	KeyG: 'Normal',
-	KeyH: '2'
+	KeyG: "Normal",
+	KeyH: "2",
 };
 
 document.addEventListener("keydown", (event) => {

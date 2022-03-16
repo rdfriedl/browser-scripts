@@ -17,7 +17,8 @@
 		"husky": "^6",
 		"ipfs-deploy": "^11.1.0",
 		"lint-staged": "^11.1.2",
-		"marked": "^4.0.12"
+		"marked": "^4.0.12",
+		"prettier": "^2.6.0"
 	},
 	"lint-staged": {
 		"*.--write": "prettier --write"
